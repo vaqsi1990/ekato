@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+
+
+
+.nav-link {
+    color: #8a733e !important;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+.title-top {
+    padding: 5rem 0 !important;
+    text-align: center;
+}
+
+.text {
+font-family: 'Karla', sans-serif;
+margin-top: 50px;
+font-size: 30px;
+color:#8a733e ;
+}
+
+
+
+.gallery {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    background-color: #fff5df;
+}
+
+.menus::after {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 10% !important;
+    width: 0;
+    height: 0.125rem;
+    transition: all 0.3s;
+    background-color: #8a733e !important;
+}
+
+.nav-item {
+    position: relative;
+}
+.menus:hover::after{width: 80% !important;    left: 7px;}
+
+.img-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img{
+    width: 100%;
+}
+
+.lb-details span{
+display: none !important;
+}
+
+
+
+
+@media screen and (max-width:991px) {
+    .menus:hover::after{width: 30% !important;  left: 5% !important;  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
